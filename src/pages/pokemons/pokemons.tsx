@@ -54,12 +54,19 @@ export const Pokemons = () => {
         {pokemons
           ? pokemons.map((pokemon) => {
               return (
-                <PokemonPreview
-                  src={pokemon.sprites.other["official-artwork"].front_default!}
-                  id={pokemon.id}
-                  name={pokemon.name}
-                  key={pokemon.id}
-                />
+                <NavLink
+                  to={`/pokemon/${pokemon.name}`}
+                  className="pokemons__nav"
+                >
+                  <PokemonPreview
+                    src={
+                      pokemon.sprites.other["official-artwork"].front_default!
+                    }
+                    id={pokemon.id}
+                    name={pokemon.name}
+                    key={pokemon.id}
+                  />
+                </NavLink>
               );
             })
           : null}
