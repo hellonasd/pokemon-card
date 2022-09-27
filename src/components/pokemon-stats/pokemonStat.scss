@@ -1,0 +1,16 @@
+.stats {
+    display: flex;
+    align-items: center;
+    &__name {
+        padding-right: 10px;
+        border-right: 2px solid black;
+        display: flex;
+    }
+    &__number {
+    }
+
+    &__track {
+    }
+    &__progress {
+    }
+}
