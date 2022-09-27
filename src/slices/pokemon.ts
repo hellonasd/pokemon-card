@@ -1,5 +1,6 @@
 import { createSlice } from "@reduxjs/toolkit";
 import type { PayloadAction } from "@reduxjs/toolkit";
+import { IPokemon, PokemonAbility } from "../pages/pokemons/type";
 
 const initialState = {};
 

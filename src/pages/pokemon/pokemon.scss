@@ -99,6 +99,7 @@
         display: flex;
         justify-content: center;
         align-items: baseline;
+
         gap: 24px;
     }
     &__weight {
@@ -182,5 +183,7 @@
     }
 
     &__base-stats {
+        margin: 16px 0;
+        text-align: center;
     }
 }

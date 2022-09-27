@@ -1,0 +1,28 @@
+.pokemonPreview {
+    width: 104px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    // height: 112px;
+    border: 1px solid black;
+    border-radius: 20px;
+    &__wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    &__img {
+        width: 72px;
+        height: 72px;
+        object-fit: fill;
+    }
+    &__number {
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    &__name {
+        width: 100%;
+        text-align: center;
+    }
+}

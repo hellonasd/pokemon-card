@@ -14,7 +14,16 @@ export const PokemonStats: React.FC<IPokemonStatProps> = ({
 }) => {
   return (
     <div className="stats">
-      <span className="stats__name">{acronym(stat.name)}</span>
+      <span
+        style={{
+          color: `rgb(${pixels[pixels.length - 1].r},${
+            pixels[pixels.length - 1].g
+          }, ${pixels[pixels.length - 1].b})`,
+        }}
+        className="stats__name"
+      >
+        {acronym(stat.name)}
+      </span>
       <span className="stats__number">{base_stat}</span>
       <div
         className="stats__track"
@@ -27,7 +36,7 @@ export const PokemonStats: React.FC<IPokemonStatProps> = ({
         }}
       >
         <div
-          className="stat__progress"
+          className="stats__progress"
           style={{
             backgroundColor: `rgb(${pixels[pixels.length - 2].r - 50},${
               pixels[pixels.length - 2].g - 50

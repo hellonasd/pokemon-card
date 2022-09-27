@@ -1,16 +1,28 @@
 .stats {
     display: flex;
     align-items: center;
+    margin: 0;
     &__name {
-        padding-right: 10px;
-        border-right: 2px solid black;
         display: flex;
+        width: 60px;
+        justify-content: end;
+
+        // font-weight: 700;
+        padding-right: 15px;
     }
     &__number {
+        display: flex;
+        justify-content: flex-start;
+        padding-left: 15px;
+        // padding-right: 8px;
+        border-left: 1px solid #e0e0e0;
+        width: 50px;
     }
 
     &__track {
+        border-radius: 5px;
     }
     &__progress {
+        border-radius: 40px;
     }
 }
