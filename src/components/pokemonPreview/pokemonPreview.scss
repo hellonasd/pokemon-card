@@ -1,20 +1,24 @@
 .pokemonPreview {
-    width: 104px;
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 40px;
-    // height: 112px;
+    // width: 104px;
+    // display: grid;
+    // grid-template-columns: repeat(4, 1fr);
+    // gap: 40px;
+    // // height: 112px;
+    // border: 1px solid black;
+    // border-radius: 20px;
     border: 1px solid black;
-    border-radius: 20px;
+    border-radius: 7px;
+    list-style: none;
+
     &__wrapper {
         display: flex;
         flex-direction: column;
-        align-items: flex-end;
     }
     &__img {
         width: 72px;
         height: 72px;
         object-fit: fill;
+        align-self: center;
     }
     &__number {
         display: flex;
@@ -24,5 +28,9 @@
     &__name {
         width: 100%;
         text-align: center;
+        background-color: antiquewhite;
+        border-bottom-right-radius: 7px;
+        border-bottom-left-radius: 7px;
+        height: 100%;
     }
 }
