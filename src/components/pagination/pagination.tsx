@@ -10,8 +10,9 @@ interface IPagesProps {
 export const Pagination = ({ page, changePage, allpages }: IPagesProps) => {
   function showPagination(allPagesCount: number, currentPage: number) {
     const array = new Array(allPagesCount).fill(0).map((_, i) => i + 1);
-    const visible = 10;
-    const delta = 5;
+    const visible = window.innerWidth <= 600 ? 7 : 10;
+
+    const delta = Math.round(visible / 2);
 
     if (currentPage >= array.length - delta + 1) {
       return (

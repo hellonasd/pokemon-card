@@ -96,11 +96,10 @@
     }
 
     &__body {
-        display: flex;
-        justify-content: center;
-        align-items: baseline;
-
-        gap: 24px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        align-items: center;
+        justify-items: center;
     }
     &__weight {
         display: flex;
